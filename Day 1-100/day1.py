@@ -39,14 +39,13 @@ class LinkedList:
         return " -> ".join(nodes)
 
     def rev(self):
-        head = self.head
+        # head = self.head
         self.__repr__()
         linkedlist = self.llist
         linkedlist.pop(-1)
         linkedlist.reverse()
-        # TODO: String representation is reversed, but data structre is not, need to reassign data and next again.
-        linkedlist.append("Empty")
-        return " -> ".join(linkedlist)
+        self.__init__(linkedlist)
+        return self.__repr__()
 
 
 
@@ -59,5 +58,5 @@ if __name__ == '__main__':
     # third_node = Node("c")
     # first_node.next = second_node
     # second_node.next = third_node
-    # print(llist)
+    print(llist)
     print(llist.rev())
