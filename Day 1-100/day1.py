@@ -51,7 +51,7 @@ class LinkedList:
 
 
 if __name__ == '__main__':
-    llist = LinkedList(['a', 'b', 'c', 'd'])
+    llist = LinkedList([3, 9, 12])
     # first_node = Node("a")
     # llist.head = first_node
     # second_node = Node("b")
